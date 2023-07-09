@@ -38,6 +38,7 @@ const Skills = () => {
 
     return (
         <div name="skills" className='bg-black pb-8 md:pb-0'>
+            <div className="h-14 w-full bg-transparent"></div>
             <SectionTitle heading="Skills" className="pt-8 md:pt-16 lg:pt-24"></SectionTitle>
 
             <div className="text-center pt-16 text-[#a64da6] font-bold">

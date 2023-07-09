@@ -1,6 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 import heroImage from '../../assets/mou.png';
-import {FiMail} from 'react-icons/fi';
+import { FiMail } from 'react-icons/fi';
+import { Link } from "react-scroll";
 
 
 
@@ -35,7 +36,10 @@ const Home = () => {
                         I am passionate about building dynamic web applications using the MERN stack. With my expertise in Tailwind, React.js, Node.js, Express.js, and MongoDB, I am able to create engaging user interfaces that enhance the overall user experience.
                     </p>
                     <div className='flex items-center gap-6'>
-                        <button className='group text-white flex items-center gap-3 uppercase font-medium  py-2 px-4 rounded-lg border-[1px] border-b-[6px] border-[#a64da6] shadow-md shadow-[#993399] hover:bg-[#a64da6] hover:shadow-[0px] '>Contact Me <span><FiMail></FiMail></span></button>
+                        <Link to='contact' smooth duration={500}>
+                            <button className='group text-white flex items-center gap-3 uppercase font-medium   py-2 px-4 rounded-lg border-[1px] border-b-[6px] border-[#a64da6] shadow-md shadow-[#993399] hover:bg-[#a64da6] hover:shadow-[0px] '>Contact Me <span><FiMail></FiMail></span></button>
+                        </Link>
+
                     </div>
                 </div>
                 <div data-aos="zoom-out-dow" data-aos-duration="2000" className='order-first mx-auto  lg:order-last'>

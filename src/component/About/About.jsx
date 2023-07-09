@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import heroImage from '../../assets/mou.png'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SectionTitle from '../SectionTitle/SectionTitle';
@@ -53,13 +53,12 @@ const About = () => {
         <div name="about" className='bg-black pb-8 md:pb-0 py-20 '>
 
             <SectionTitle heading="About Me" className="pt-8 md:pt-16 lg:pt-24"></SectionTitle>
-            <div className='max-w-screen-lg mx-auto  flex flex-col md:flex-row justify-between items-center gap-6 px-4 md:px-8 lg:px-14'>
-                <div data-aos="fade-up-left" className='md:w-2/3  text-gray-300 text-justify'>
-                    <p>
+            <div className='max-w-screen-lg mx-auto px-4 md:px-8 lg:px-14'>
+            <p className='text-center mb-6'>
                         Welcome to my portfolio, I am <span className='text-2xl font-bold text-[#a64da6]'>Nishita Das Gupta</span> , a passionate and dedicated MERN stack web develper. I can provide clean code and pixel perfect design. 
                     </p>
-                    <div>
-                        <table className="table-auto">
+                <div data-aos="fade-up-left" className='md:w-/3  text-gray-300 text-justify mx-auto'>
+                       <table className="table-auto">
                             <tbody>
                                 {values?.map((item) => (
                                     <TableRow 
@@ -71,17 +70,10 @@ const About = () => {
                                 ))}
                             </tbody>
                         </table>
-                    </div>
-                    {/* <Social></Social> */}
-                   
-
-
-                </div>
-                <div data-aos="fade-up-right" className=' order-first mb-14'>
-                    <img className='rounded-xl ' src={heroImage} alt="" />
-                </div>
-            </div>
-        </div>
+                    
+ </div>
+ </div>
+ </div>
     );
 };
 

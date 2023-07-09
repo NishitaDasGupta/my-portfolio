@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi'
+import { FiFacebook } from 'react-icons/fi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 const Social = () => {
 
@@ -28,10 +28,10 @@ const Social = () => {
             id: 3,
             child: (
                 <>
-                    <FiMail size={30} />
+                    <FiFacebook size={30} />
                 </>
             ),
-            href: "nishitadasguptamou@gmail.com",
+            href: "https://web.facebook.com/nishi.ta.79/",
         },
         {
             id: 4,
@@ -40,7 +40,7 @@ const Social = () => {
                     <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: "/Nishita_Resume.pdf",
+            href: "https://drive.google.com/u/0/uc?id=1zwR9hpJqfO6KNE-LUvJtvvTMMMkEh1nu&export=download",
 
             download: true,
         },
@@ -48,9 +48,9 @@ const Social = () => {
 
     return (
         <div className=''>
-            <div className='grid grid-cols-4 gap-[2px]'>
+            <div className='flex justify-center items-center'>
                 {
-                    links.map(({ id, child, href, download }) => <div key={id} className='w-40 h-14   '>
+                    links.map(({ id, child, href, download }) => <div key={id} className='mr-5'>
                         <a className={`px-4 text-lg font-semibold h-full  w-full text-white `} href={href} download={download} target="_blank" rel="noreferrer">
                             {child}
                         </a>
